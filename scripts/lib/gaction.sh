@@ -8,7 +8,7 @@ _set_env() {
     eval "export ${var_name}"
     local var_value="${!var_name}"
     var_value="${var_value//%/%25}"
-    var_value="${var_value//$'\n'/%0A}"
+    #var_value="${var_value//$'\n'/%0A}"
     var_value="${var_value//$'\r'/%0D}"
     #echo "::set-env name=${var_name}::${var_value}"
     echo "${var_name}=${var_value}" >> $GITHUB_ENV
