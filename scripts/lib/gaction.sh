@@ -1,4 +1,4 @@
-#!/bin/bash
+#!/bin/bash -xv
 
 # shellcheck disable=SC1090
 source "${BASH_SOURCE%/*}/utils.sh"
