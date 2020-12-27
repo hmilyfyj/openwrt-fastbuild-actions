@@ -1,4 +1,4 @@
-#!/bin/bash
+#!/bin/bash  -xv
 # shellcheck disable=SC2034
 
 install_commands() {
