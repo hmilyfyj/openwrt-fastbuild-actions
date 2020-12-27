@@ -77,6 +77,8 @@ jobs:
 
     - name: Init build env
       run: scripts/cisteps/build-openwrt/01-init_env.sh
+      env:
+        ACTIONS_ALLOW_UNSECURE_COMMANDS: 'true'
 
     - name: Check if skip this job
       run: scripts/cisteps/build-openwrt/02-check_target.sh
